@@ -1,9 +1,8 @@
 //
 //  DDIndexViewMode.m
-//  XDHookStudyProject
 //
-//  Created by xudong on 2019/1/28.
-//  Copyright © 2019 dida. All rights reserved.
+//  Created by dong on 2019/1/28.
+//  Copyright © 2019 d. All rights reserved.
 //
 
 #import "DDIndexViewMode.h"

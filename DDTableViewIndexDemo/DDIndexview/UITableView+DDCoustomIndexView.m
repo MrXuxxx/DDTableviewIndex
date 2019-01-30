@@ -1,9 +1,8 @@
 //
 //  UITableView+DDCoustomIndexView.m
-//  XDHookStudyProject
 //
-//  Created by xudong on 2019/1/29.
-//  Copyright © 2019 dida. All rights reserved.
+//  Created by dong on 2019/1/29.
+//  Copyright © 2019 d. All rights reserved.
 //
 
 #import "UITableView+DDCoustomIndexView.h"
@@ -74,10 +73,10 @@ static NSInteger indexTag = 100001;
             DDIndexViewMode *mode = [[DDIndexViewMode alloc]initMakeIndexviewModel:^(DDIndexViewModel *make) {
                 make.titles = [self.dataSource sectionIndexTitlesForTableView:self];
                 make.cachedSize = rect.size;
-                make.indexColor = [UIColor redColor];
-                make.indexBackgroundColor = [UIColor blackColor];
-                make.selectedColor = [UIColor blueColor];
-                make.selectedBackgroundColor = [UIColor yellowColor];
+                make.indexColor = [UIColor blackColor];
+                make.indexBackgroundColor = [UIColor whiteColor];
+                make.selectedColor = [UIColor whiteColor];
+                make.selectedBackgroundColor = [UIColor blackColor];
             }];
             [self setDd_mode:mode];
         }

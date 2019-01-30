@@ -15,6 +15,10 @@
 		42FB9ECE22019B9500E26260 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB9ECD22019B9500E26260 /* main.m */; };
 		42FB9ED822019B9500E26260 /* DDTableViewIndexDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB9ED722019B9500E26260 /* DDTableViewIndexDemoTests.m */; };
 		42FB9EE322019B9500E26260 /* DDTableViewIndexDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB9EE222019B9500E26260 /* DDTableViewIndexDemoUITests.m */; };
+		42FB9EF122019E1700E26260 /* baichi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42FB9EF022019E1700E26260 /* baichi.jpg */; };
+		42FB9F242201A23A00E26260 /* DDIndexViewMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB9F1E2201A23A00E26260 /* DDIndexViewMode.m */; };
+		42FB9F252201A23A00E26260 /* UITableView+DDCoustomIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB9F1F2201A23A00E26260 /* UITableView+DDCoustomIndexView.m */; };
+		42FB9F262201A23B00E26260 /* DDTableviewIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB9F222201A23A00E26260 /* DDTableviewIndex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		42FB9EDE22019B9500E26260 /* DDTableViewIndexDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDTableViewIndexDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FB9EE222019B9500E26260 /* DDTableViewIndexDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDTableViewIndexDemoUITests.m; sourceTree = "<group>"; };
 		42FB9EE422019B9500E26260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42FB9EF022019E1700E26260 /* baichi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = baichi.jpg; sourceTree = "<group>"; };
+		42FB9F1E2201A23A00E26260 /* DDIndexViewMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDIndexViewMode.m; sourceTree = "<group>"; };
+		42FB9F1F2201A23A00E26260 /* UITableView+DDCoustomIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DDCoustomIndexView.m"; sourceTree = "<group>"; };
+		42FB9F202201A23A00E26260 /* DDTableviewIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableviewIndex.h; sourceTree = "<group>"; };
+		42FB9F212201A23A00E26260 /* DDIndexViewMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDIndexViewMode.h; sourceTree = "<group>"; };
+		42FB9F222201A23A00E26260 /* DDTableviewIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableviewIndex.m; sourceTree = "<group>"; };
+		42FB9F232201A23A00E26260 /* UITableView+DDCoustomIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+DDCoustomIndexView.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +112,12 @@
 		42FB9EBD22019B9300E26260 /* DDTableViewIndexDemo */ = {
 			isa = PBXGroup;
 			children = (
+				42FB9F1D2201A23A00E26260 /* DDIndexview */,
 				42FB9EBE22019B9300E26260 /* AppDelegate.h */,
 				42FB9EBF22019B9300E26260 /* AppDelegate.m */,
 				42FB9EC122019B9300E26260 /* ViewController.h */,
 				42FB9EC222019B9300E26260 /* ViewController.m */,
+				42FB9EF022019E1700E26260 /* baichi.jpg */,
 				42FB9EC422019B9300E26260 /* Main.storyboard */,
 				42FB9EC722019B9500E26260 /* Assets.xcassets */,
 				42FB9EC922019B9500E26260 /* LaunchScreen.storyboard */,
@@ -130,6 +143,19 @@
 				42FB9EE422019B9500E26260 /* Info.plist */,
 			);
 			path = DDTableViewIndexDemoUITests;
+			sourceTree = "<group>";
+		};
+		42FB9F1D2201A23A00E26260 /* DDIndexview */ = {
+			isa = PBXGroup;
+			children = (
+				42FB9F212201A23A00E26260 /* DDIndexViewMode.h */,
+				42FB9F1E2201A23A00E26260 /* DDIndexViewMode.m */,
+				42FB9F202201A23A00E26260 /* DDTableviewIndex.h */,
+				42FB9F222201A23A00E26260 /* DDTableviewIndex.m */,
+				42FB9F232201A23A00E26260 /* UITableView+DDCoustomIndexView.h */,
+				42FB9F1F2201A23A00E26260 /* UITableView+DDCoustomIndexView.m */,
+			);
+			path = DDIndexview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42FB9ECB22019B9500E26260 /* LaunchScreen.storyboard in Resources */,
+				42FB9EF122019E1700E26260 /* baichi.jpg in Resources */,
 				42FB9EC822019B9500E26260 /* Assets.xcassets in Resources */,
 				42FB9EC622019B9300E26260 /* Main.storyboard in Resources */,
 			);
@@ -262,9 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42FB9F262201A23B00E26260 /* DDTableviewIndex.m in Sources */,
+				42FB9F242201A23A00E26260 /* DDIndexViewMode.m in Sources */,
 				42FB9EC322019B9300E26260 /* ViewController.m in Sources */,
 				42FB9ECE22019B9500E26260 /* main.m in Sources */,
 				42FB9EC022019B9300E26260 /* AppDelegate.m in Sources */,
+				42FB9F252201A23A00E26260 /* UITableView+DDCoustomIndexView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

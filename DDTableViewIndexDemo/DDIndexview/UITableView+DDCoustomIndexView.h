@@ -1,9 +1,8 @@
 //
 //  UITableView+DDCoustomIndexView.h
-//  XDHookStudyProject
 //
-//  Created by xudong on 2019/1/29.
-//  Copyright © 2019 dida. All rights reserved.
+//  Created by dong on 2019/1/29.
+//  Copyright © 2019 d. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
