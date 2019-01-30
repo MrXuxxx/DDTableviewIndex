@@ -18,7 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.dataArr = @[@[@"a",@"a",@"a",@"a"],@[@"b",@"b",@"b",@"b"],@[@"c",@"c",@"c",@"c"],@[@"d",@"d",@"d",@"d"],@[@"e",@"e",@"e",@"e"]];
+    self.dataArr = @[@[@"a",@"a",@"a",@"a"],@[@"b",@"b",@"b",@"b"],@[@"c",@"c",@"c",@"c"],@[@"d",@"d",@"d"],@[@"e",@"e",@"e",@"e"],@[@"f",@"f",@"f",@"f"],@[@"g",@"g",@"g"],@[@"h",@"h"],@[@"i",@"i",@"i",@"i"]];
+    // 添加右侧索引样式
+    DDIndexViewMode *mode = [[DDIndexViewMode alloc]initMakeIndexviewModel:^(DDIndexViewModel *make) {
+        make.indexColor = [UIColor blackColor];
+        make.indexBackgroundColor = [UIColor whiteColor];
+        make.selectedColor = [UIColor whiteColor];
+        make.selectedBackgroundColor = [UIColor blackColor];
+    }];
+    [self.testTableView addIndexViewStyleWithMode:mode];
 }
 
 
@@ -45,12 +53,12 @@
     return 100;
 }
 - (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    return @[@"a",@"b",@"c",@"d",@"e"];
+    return @[@"a",@"b",@"c",@"d",@"e",@"f",@"g",@"h",@"i"];
 }
 //返回每个索引的内容
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     
-    return [@[@"a",@"b",@"c",@"d",@"e"] objectAtIndex:section];
+    return [@[@"a",@"b",@"c",@"d",@"e",@"f",@"g",@"h",@"i"] objectAtIndex:section];
 }
 
 //返回section的个数

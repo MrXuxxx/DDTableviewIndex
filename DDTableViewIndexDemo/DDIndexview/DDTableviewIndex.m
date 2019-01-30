@@ -90,13 +90,15 @@ static inline NSInteger DDPositionOfTextLayerInY(CGFloat y, CGFloat margin, CGFl
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {
+    // 如果触碰点不在索引范围内
+    if (!CGRectContainsPoint(self.bounds, point)) return NO;
     return YES;
 }
 
 - (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event
 {
     CGPoint location = [touch locationInView:self];
-    if (location.x < 0) return YES;
+    if (location.x < 0) return NO;
     NSInteger currentPosition = DDPositionOfTextLayerInY(location.y, _topPadding, _cachedSize.width);
     if (currentPosition < 0 || currentPosition >= (NSInteger)_titles.count) return YES;
     if (currentPosition != self.currentSection || currentPosition == 0) {
@@ -111,7 +113,7 @@ static inline NSInteger DDPositionOfTextLayerInY(CGFloat y, CGFloat margin, CGFl
 - (BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event
 {
     CGPoint location = [touch locationInView:self];
-    if (location.x < 0) return YES;
+    if (location.x < 0) return NO;
 
     NSInteger currentPosition = DDPositionOfTextLayerInY(location.y, _topPadding, _cachedSize.width);
     if (currentPosition < 0 || currentPosition >= (NSInteger)_titles.count) return YES;
